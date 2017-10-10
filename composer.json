@@ -13,7 +13,7 @@
     ],
     "support": {
         "issues": "https://github.com/tri-duong-dena/flarum-ext-vietnamese/issues",
-        "source": "https://github.com/tri-duong-dena/flarum-ext-vietnamese",
+        "source": "https://github.com/tri-duong-dena/flarum-ext-vietnamese"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.7"
