@@ -1,20 +1,19 @@
 {
-    "name": "milescellar/flarum-ext-french",
+    "name": "tri-duong-dena/flarum-ext-vietnamese",
     "type": "flarum-extension",
-    "description": "French language pack for Flarum.",
-    "homepage": "https://github.com/milescellar/flarum-ext-french",
+    "description": "Vietnamese language pack for Flarum.",
+    "homepage": "https://github.com/tri-duong-dena/flarum-ext-vietnamese",
     "keywords": ["locale"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Miles Cellar",
-            "email": "milescellar@protonmail.com"
+            "name": "Tri Duong",
+            "email": "duong.tri@gmail.com"
         }
     ],
     "support": {
-        "issues": "https://github.com/milescellar/flarum-ext-french/issues",
-        "source": "https://github.com/milescellar/flarum-ext-french",
-        "forum": "https://discuss.flarum.org/d/615-french-language-pack"
+        "issues": "https://github.com/tri-duong-dena/flarum-ext-vietnamese/issues",
+        "source": "https://github.com/tri-duong-dena/flarum-ext-vietnamese",
     },
     "require": {
         "flarum/core": "^0.1.0-beta.7"
@@ -24,7 +23,7 @@
             "dev-master": "1.1.x-dev"
         },
         "flarum-extension": {
-            "title": "French",
+            "title": "Vietnam",
             "icon": {
                 "image": "icon.svg",
                 "backgroundColor": "#fff",
@@ -33,8 +32,8 @@
             }
         },
         "flarum-locale": {
-            "code": "fr",
-            "title": "Français"
+            "code": "vi",
+            "title": "Tiếng Việt"
         }
     }
 }
