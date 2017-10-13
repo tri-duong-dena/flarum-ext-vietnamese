@@ -13,82 +13,82 @@ flarum-tags:
 
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
-      color_label: Couleur
-      delete_tag_button: Supprimer l’étiquette
-      delete_tag_confirmation: "Êtes-vous sûr de vouloir supprimer cette étiquette ? Les discussions publiées sous cette étiquette ne seront pas supprimées."
-      description_label: Description
-      hide_label: Masquer de la liste de discussions
+      color_label: Màu
+      delete_tag_button: Xoá tag
+      delete_tag_confirmation: "Bạn muốn xóa tag này? Bài viết có tag này sẽ KHÔNG bị xóa."
+      description_label: Mô tả
+      hide_label: Ẩn tất cả
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
-      slug_label: Identifiant
+      slug_label: Nhãn rút gọn
       submit_button: => core.ref.okay
       title: => flarum-tags.ref.create_tag
 
     # These translations are used in the navigation bar.
     nav:
       tags_button: => flarum-tags.ref.tags
-      tags_text: Gérez la liste des étiquettes disponibles pour organiser les discussions.
+      tags_text: Quản lý tất cả tag để gắn vào bài viết.
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_edit_tags_label: Autoriser la modification des étiquettes
-      restrict_by_tag_heading: Restreindre par étiquette
-      tag_discussions_label: Ajouter des étiquettes aux discussions
+      allow_edit_tags_label: Cho phép chỉnh sửa tag
+      restrict_by_tag_heading: Hạn chế các tag
+      tag_discussions_label: Thêm tag cho bài viết
 
     # These translations are used in the Tag Settings modal dialog.
     tag_settings:
-      range_separator_text: " à "
-      required_primary_heading: Limite du nombre d’étiquettes primaires
-      required_primary_text: Saisissez le nombre minimal et maximal d’étiquettes primaires qui peuvent être ajoutées à une discussion.
-      required_secondary_heading: Limite du nombre d’étiquettes secondaires
-      required_secondary_text: Saisissez le nombre minimal et maximal d’étiquettes secondaires qui peuvent être ajoutées à une discussion.
-      title: Paramètres des étiquettes
+      range_separator_text: " đến "
+      required_primary_heading: Số tag chính cần có
+      required_primary_text: Nhập số lượng nhỏ nhất và lớn nhất mà tag chính cần có trong thảo luận.
+      required_secondary_heading: Số tag  phụ cần có
+      required_secondary_text: Nhập số lượng nhỏ nhất và lớn nhất mà tag phụ cần có trong thảo luận.
+      title: Thiết lập tag
 
     # These translations are used in the Tags page.
     tags:
-      about_tags_text: "Les étiquettes permettent de catégoriser les discussions. Les étiquettes primaires sont similaires aux traditionnelles catégories, elles peuvent être disposées en une hiérarchie à deux niveaux. Les étiquettes secondaires ne sont ni hierarchisées, ni ordonnées, mais peuvent êtres utilisées comme des catégories mineures."
+      about_tags_text: "Tag dùng để phân loại thảo luận. Tag chính giống như chủ đề thảo luận trước đây: chúng có thể sắp xếp thành hai cấp quản lý. Tag phụ thì không có phân cấp hay thứ tự, chỉ dùng để phân loại rõ hơn cho chủ đề."
       create_tag_button: => flarum-tags.ref.create_tag
-      primary_heading: Étiquettes primaires
-      secondary_heading: Étiquettes secondaires
-      settings_button: Paramètres
+      primary_heading: Các tag chính
+      secondary_heading: Các tag phụ
+      settings_button: Thiết lập
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Sélectionnez une étiquette primaire|Sélectionnez {count} étiquettes primaires"
-      choose_secondary_placeholder: "Sélectionnez une étiquette secondaire|Sélectionnez {count} étiquettes secondaires"
-      edit_title: "Modifiez les étiquettes de {title}"
+      choose_primary_placeholder: "Chọn tag chính|Chọn {count} tag chính"
+      choose_secondary_placeholder: "Chọn thêm 1 tag|Chọn {count} tag"
+      edit_title: "Sửa tag cho bài viết {title}"
       submit_button: => core.ref.okay
-      title: Sélectionnez les étiquettes de votre discussion
+      title: Chọn tag cho bài viết
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      choose_tags_link: Sélectionnez des étiquettes
+      choose_tags_link: Chọn tag
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      edit_tags_button: Modifier les étiquettes
+      edit_tags_button: Sửa đổi tag
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
-      more_link: Plus…
+      more_link: Thêm ...
       tags_link: => flarum-tags.ref.tags
-      untagged_link: Sans étiquette
+      untagged_link: Bỏ tag
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      added_tags_text: "{username} a ajouté {tagsAdded}."
-      added_and_removed_tags_text: "{username} a ajouté {tagsAdded} et a supprimé {tagsRemoved}."
-      removed_tags_text: "{username} a supprimé {tagsRemoved}."
-      tags_text: "l’étiquette {tags}|les étiquettes {tags}"
+      added_tags_text: "{username} đã gắn tag {tagsAdded}."
+      added_and_removed_tags_text: "{username} đã gắn tag {tagsAdded} và xóa tag {tagsRemoved}."
+      removed_tags_text: "{username} đã xoá tag {tagsRemoved}."
+      tags_text: "tag {tags}|tag {tags}"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
 
     # This translation is displayed in place of the name of a tag that's been deleted.
-    deleted_tag_text: Supprimée
+    deleted_tag_text: Đã xoá
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -96,6 +96,6 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: Créer une étiquette
-    name: Nom
-    tags: Étiquettes
+    create_tag: Tạo tag mới
+    name: Tên
+    tags: Tag
